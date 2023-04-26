@@ -17,4 +17,9 @@
 // sure that if we *do* accidentally break the configuration,
 // the failure isn't silent.
 
-throw new Error('This module must be shimmed by a specific renderer.');
+// step7
+// 这个文件是会在编译的时候被替换成对应的 host config
+// throw new Error('This module must be shimmed by a specific renderer.');
+// export * from 'react-dom-bindings/src/client/ReactFiberConfigDOM';
+// export * from "./forks/ReactFiberHostConfig.dom-browser";
+export * from 'react-dom-bindings/src/client/ReactFiberConfigDOM';
